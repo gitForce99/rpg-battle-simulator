@@ -11,7 +11,8 @@ class RpgBattleSimulator{
         Scanner sc = new Scanner (System.in);
         wait(1000);
         System.out.println("Please enter your name: ");
-
+        String str = sc.nextLine();
+        System.out.println("So your name is " + str + "? What a lovely name!");
 
     }
 
