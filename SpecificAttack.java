@@ -1,14 +1,21 @@
 class SpecificAttack{
-    private int magicOrPhysical;
+    private int magicOrPhysicalOrHeal;
     private int attackPower;
     private int mandatoryMultitarget;
     private int multitargetAllowed;
     private char elementalAffinity;
 
-    public SpecificAttack()
+    public SpecificAttack(int magOrPhysOrHeal, int atkPwr, int mandMult, int multiAllowed, char eleAff) {
+        magicOrPhysicalOrHeal = magOrPhysOrHeal;
+        attackPower = atkPwr;
+        mandatoryMultitarget = mandMult;
+        multiAllowed = multiAllowed;
+        elementalAffinity = eleAff;
 
-    public int getMagicOrPhysical(){
-        return magicOrPhysical;
+    }
+
+    public int getMagicOrPhysicalOrHeal(){
+        return magicOrPhysicalOrHeal;
     }
 
     public int getAttackPower(){
@@ -23,7 +30,7 @@ class SpecificAttack{
         return multitargetAllowed;
     }
 
-    public char elementalAffinity(){
+    public char getElementalAffinity(){
         return elementalAffinity;
     }
 
