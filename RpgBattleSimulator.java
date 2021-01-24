@@ -6,8 +6,8 @@ import java.util.Hashtable;
 
 class RpgBattleSimulator{
 
-    Hashtable<String,SpecificAttack> MoveTable;
-    Hashtable<String,Job> JobTable;
+    private Hashtable<String,SpecificAttack> MoveTable;
+    private Hashtable<String,Job> JobTable;
 
     public static void main(String[] args) {
         //System.out.println("System call: Generate Luminous Element");
@@ -16,13 +16,14 @@ class RpgBattleSimulator{
         wait(1000);
         System.out.println("Please enter your name: ");
         String str = sc.nextLine();
-        System.out.println("So your name is " + str + "? What a lovely name!");
+        System.out.println("So your name is " + str + "? Cool!");
 
     }
 
 
     private static void createMoves() {
-
+        MoveTable = new Hashtable();
+        SpecificAttack Gash = new SpecificAttack(1, 20, 0, 0, "Gash", 'n');
     }
 
 

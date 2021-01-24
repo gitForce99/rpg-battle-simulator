@@ -3,13 +3,15 @@ class SpecificAttack{
     private int attackPower;
     private int mandatoryMultitarget;
     private int multitargetAllowed;
+    private String attackName;
     private char elementalAffinity;
 
-    public SpecificAttack(int magOrPhysOrHeal, int atkPwr, int mandMult, int multiAllowed, char eleAff) {
+    public SpecificAttack(int magOrPhysOrHeal, int atkPwr, int mandMult, int multiAllowed, String atkNm, char eleAff) {
         magicOrPhysicalOrHeal = magOrPhysOrHeal;
         attackPower = atkPwr;
         mandatoryMultitarget = mandMult;
         multiAllowed = multiAllowed;
+        attackName = atkNm;
         elementalAffinity = eleAff;
 
     }
