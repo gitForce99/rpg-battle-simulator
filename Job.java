@@ -1,5 +1,5 @@
 import java.util.*;
-import
+
 
 
 public class Job {
@@ -7,8 +7,8 @@ public class Job {
     ArrayList<SpecificAttack> JobSkills;
 
 
-    public Job {
-        JobSkills = new ArrayList<SpecificAttack>();
+    public Job (ArrayList<SpecificAttack> importedSkills){
+        JobSkills = new importedSkills;
     }
 
 

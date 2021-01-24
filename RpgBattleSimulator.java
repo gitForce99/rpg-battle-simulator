@@ -1,9 +1,13 @@
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 import java.util.Scanner;
+import java.util.Hashtable;
 
 
 class RpgBattleSimulator{
+
+    Hashtable<String,SpecificAttack> MoveTable;
+    Hashtable<String,Job> JobTable;
 
     public static void main(String[] args) {
         //System.out.println("System call: Generate Luminous Element");
@@ -16,7 +20,13 @@ class RpgBattleSimulator{
 
     }
 
-    public static void wait(int ms)
+
+    private static void createMoves() {
+
+    }
+
+
+    private static void wait(int ms)
     {
         try {
             Thread.sleep(ms);
