@@ -2,7 +2,7 @@ import java.util.*;
 
 
 
-public class Job {
+/*public class Job {
 
     ArrayList<SpecificAttack> JobSkills;
 
@@ -13,4 +13,4 @@ public class Job {
 
 
 
-}
+}*/
