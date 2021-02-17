@@ -1,0 +1,10 @@
+class PlayerCharacter extends Combatant {
+
+
+
+
+
+
+
+    
+}

@@ -10,7 +10,7 @@ public class Job {
     String jobDescription;
 
 
-    public Job (String jobNm, ArrayList<String> importedSkills, String jobDesc, ){
+    public Job (String jobNm, ArrayList<String> importedSkills, String jobDesc){
         jobName = jobNm;
         jobSkills = importedSkills;
         jobDescription = jobDesc;

@@ -26,6 +26,7 @@ class RpgBattleSimulator{
 
 
         myProgram.createMoves();
+        myProgram.createJobs();
 
 
     }
@@ -41,12 +42,17 @@ class RpgBattleSimulator{
         moveTable.put(lash.getAttackName(), lash);
         moveTable.put(heal.getAttackName(), heal);
         moveTable.put(spark.getAttackName(), spark);
-        System.out.print("Moves successfully loaded");
+        System.out.println("Moves successfully loaded");
     }
 
     private void createJobs() {
-
-
+        ArrayList demoJobMoveList = new ArrayList();
+        demoJobMoveList.add("Strike");
+        demoJobMoveList.add("Lash");
+        demoJobMoveList.add("Heal");
+        demoJobMoveList.add("Spark");
+        Job demoJob = new Job("Demo Job", demoJobMoveList, "A sample job for use in designing the project, the job is skilled in a variety of techniques.");
+        System.out.println("Jobs successfully loaded");
     }
 
     private void wait(int ms)
