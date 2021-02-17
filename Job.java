@@ -2,15 +2,34 @@ import java.util.*;
 
 
 
-/*public class Job {
+public class Job {
 
-    ArrayList<SpecificAttack> JobSkills;
+    //ArrayList<SpecificAttack> JobSkills;
+    ArrayList<String> jobSkills;
+    String jobName;
+    String jobDescription;
 
 
-    public Job (ArrayList<SpecificAttack> importedSkills){
-        JobSkills = new importedSkills;
+    public Job (String jobNm, ArrayList<String> importedSkills, String jobDesc, ){
+        jobName = jobNm;
+        jobSkills = importedSkills;
+        jobDescription = jobDesc;
+
     }
 
+    public String getJobName() {
+        return jobName;
+    }
 
+    public void setJobName(String jobName) {
+        this.jobName = jobName;
+    }
 
-}*/
+    public ArrayList<String> getJobSkills() {
+        return jobSkills;
+    }
+
+    public void setJobSkills(ArrayList<String> jobSkills) {
+        this.jobSkills = jobSkills;
+    }
+}

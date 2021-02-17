@@ -6,8 +6,12 @@ import java.util.Hashtable;
 
 class RpgBattleSimulator{
 
-    private Hashtable<String,SpecificAttack> MoveTable;
+    private Hashtable<String,SpecificAttack> moveTable;
     //private Hashtable<String,Job> JobTable;
+
+    /*public RpgBattleSimulator() {
+        MoveTable = new Hashtable<String,SpecificAttack>();
+    }*/
 
     public static void main(String[] args) {
         //System.out.println("System call: Generate Luminous Element");
@@ -23,14 +27,27 @@ class RpgBattleSimulator{
 
         myProgram.createMoves();
 
+
     }
 
 
     private void createMoves() {
-        MoveTable = new Hashtable();
-        SpecificAttack Gash = new SpecificAttack(1, 20, 0, 0, "Gash", 'n');
+        moveTable = new Hashtable();
+        SpecificAttack strike = new SpecificAttack(1, 20, 0, 0, "Strike", 'n', "A simple physical attack");
+        SpecificAttack lash = new SpecificAttack(1, 40, 0, 0, "Lash", 'n', "A strong physical attack");
+        SpecificAttack heal = new SpecificAttack(2, 10, 0, 0, "Heal", 'n', "A simple healing spell");
+        SpecificAttack spark = new SpecificAttack(0, 20, 0, 0, "Spark", 'e', "A simple electric attack");
+        moveTable.put(strike.getAttackName(), strike);
+        moveTable.put(lash.getAttackName(), lash);
+        moveTable.put(heal.getAttackName(), heal);
+        moveTable.put(spark.getAttackName(), spark);
+        System.out.print("Moves successfully loaded");
     }
 
+    private void createJobs() {
+
+
+    }
 
     private void wait(int ms)
     {
