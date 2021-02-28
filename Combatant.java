@@ -2,86 +2,86 @@ import java.util.*;
 import java.util.ArrayList;
 
 public abstract class Combatant{
-    private int MaximumHp;
-    private int CurrentHp;
-    private int MaximumMp;
-    private int CurrentMp;
-    private int Strength;
-    private int Defense;
-    private int Intelligence;
-    private int MagicDefense;
-    private int Agility;
+    private int maximumHp;
+    private int currentHp;
+    private int maximumMp;
+    private int currentMp;
+    private int strength;
+    private int defense;
+    private int intelligence;
+    private int magicDefense;
+    private int agility;
 
 
     final int getMaximumHP() {
-        return MaximumHp;
+        return maximumHp;
     }
 
     final setMaximumHP(int newHP) {
-        MaximumHp = newHP;
+        maximumHp = newHP;
     }
 
     final int getCurrentHp() {
-        return CurrentHp;
+        return currentHp;
     }
 
     final setCurrentHp(int newHP) {
-        CurrentHp = newHP;
+        currentHp = newHP;
     }
 
     final int getMaximumMp() {
-        return MaximumMp;
+        return maximumMp;
     }
 
     final setMaximumMp(int newMP) {
-        MaximumMp = newMP;
+        maximumMp = newMP;
     }
 
     final int getCurrentMp() {
-        return CurrentMp;
+        return currentMp;
     }
 
     final setCurrentMp(int newMP) {
-        CurrentMp = newMP;
+        currentMp = newMP;
     }
 
     final int getStrength() {
-        return Strength;
+        return strength;
     }
 
     final setStrength(int newStrength) {
-        Strength = newStrength;
+        strength = newStrength;
     }
 
     final int getDefense() {
-        return Defense;
+        return defense;
     }
 
     final setDefense(int newDefense) {
-        Defense = newDefense;
+        defense = newDefense;
     }
 
     final int getIntelligence() {
-        return Intelligence;
+        return intelligence;
     }
 
     final setIntelligence(int newIntel) {
-        Intelligence = newIntel;
+        intelligence = newIntel;
     }
 
     final int getMagicDefense(){
-        return MagicDefense;
+        return magicDefense;
     }
 
     final setMagicDefense(int newMagicDefense) {
-        MagicDefense = newMagicDefense;
+        magicDefense = newMagicDefense;
     }
 
     final int getAgility() {
-        return Agility;
+        return agility;
     }
 
     final int setAgility(int newAgility) {
-        Agility = newAgility;
+        agility = newAgility;
     }
 }
