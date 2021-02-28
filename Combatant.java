@@ -1,23 +1,20 @@
-import java.util.*;
-import java.util.ArrayList;
-
 public abstract class Combatant{
-    private int maximumHp;
-    private int currentHp;
-    private int maximumMp;
-    private int currentMp;
-    private int strength;
-    private int defense;
-    private int intelligence;
-    private int magicDefense;
-    private int agility;
+    protected int maximumHp;
+    protected int currentHp;
+    protected int maximumMp;
+    protected int currentMp;
+    protected int strength;
+    protected int defense;
+    protected int intelligence;
+    protected int magicDefense;
+    protected int agility;
 
 
     final int getMaximumHP() {
         return maximumHp;
     }
 
-    final setMaximumHP(int newHP) {
+    final void setMaximumHP(int newHP) {
         maximumHp = newHP;
     }
 
@@ -25,7 +22,7 @@ public abstract class Combatant{
         return currentHp;
     }
 
-    final setCurrentHp(int newHP) {
+    final void setCurrentHp(int newHP) {
         currentHp = newHP;
     }
 
@@ -33,7 +30,7 @@ public abstract class Combatant{
         return maximumMp;
     }
 
-    final setMaximumMp(int newMP) {
+    final void setMaximumMp(int newMP) {
         maximumMp = newMP;
     }
 
@@ -41,7 +38,7 @@ public abstract class Combatant{
         return currentMp;
     }
 
-    final setCurrentMp(int newMP) {
+    final void setCurrentMp(int newMP) {
         currentMp = newMP;
     }
 
@@ -49,7 +46,7 @@ public abstract class Combatant{
         return strength;
     }
 
-    final setStrength(int newStrength) {
+    final void setStrength(int newStrength) {
         strength = newStrength;
     }
 
@@ -57,7 +54,7 @@ public abstract class Combatant{
         return defense;
     }
 
-    final setDefense(int newDefense) {
+    final void setDefense(int newDefense) {
         defense = newDefense;
     }
 
@@ -65,7 +62,7 @@ public abstract class Combatant{
         return intelligence;
     }
 
-    final setIntelligence(int newIntel) {
+    final void setIntelligence(int newIntel) {
         intelligence = newIntel;
     }
 
@@ -73,7 +70,7 @@ public abstract class Combatant{
         return magicDefense;
     }
 
-    final setMagicDefense(int newMagicDefense) {
+    final void setMagicDefense(int newMagicDefense) {
         magicDefense = newMagicDefense;
     }
 
@@ -81,7 +78,7 @@ public abstract class Combatant{
         return agility;
     }
 
-    final int setAgility(int newAgility) {
+    final void setAgility(int newAgility) {
         agility = newAgility;
     }
 }

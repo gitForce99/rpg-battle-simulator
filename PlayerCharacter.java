@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class PlayerCharacter extends Combatant {
 
     private Job jobType;
@@ -6,18 +8,18 @@ class PlayerCharacter extends Combatant {
 
 
     public PlayerCharacter(String name, Job jobType) {
-        self.name = name;
-        self.jobType = jobType;
-        self.maximumHp = 300;
-        self.currentHp = 300;
-        self.maximumMp = 100;
-        self.currentMp = 100;
-        self.strength = 5;
-        self.defense = 5;
-        self.intelligence = 5;
-        self.magicDefense = 5;
-        self.agility = 5;
-        self.level = 1;
+        this.name = name;
+        this.jobType = jobType;
+        this.maximumHp = 300;
+        this.currentHp = 300;
+        this.maximumMp = 100;
+        this.currentMp = 100;
+        this.strength = 5;
+        this.defense = 5;
+        this.intelligence = 5;
+        this.magicDefense = 5;
+        this.agility = 5;
+        this.level = 1;
     }
 
 
