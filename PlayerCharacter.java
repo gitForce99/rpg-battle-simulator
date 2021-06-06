@@ -5,6 +5,7 @@ class PlayerCharacter extends Combatant {
     private Job jobType;
     private String name;
     private int level;
+    private ArrayList<String> availableMoves;
 
 
     public PlayerCharacter(String name, Job jobType) {
@@ -22,7 +23,7 @@ class PlayerCharacter extends Combatant {
         this.level = 1;
     }
 
-
+    
 
 
 }

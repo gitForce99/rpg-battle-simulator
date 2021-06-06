@@ -5,15 +5,15 @@ import java.util.*;
 public class Job {
 
     //ArrayList<SpecificAttack> JobSkills;
-    ArrayList<String> jobSkills;
+    ArrayList<Pair<String, Integer>> jobSkills;
     String jobName;
     String jobDescription;
 
 
-    public Job (String jobNm, ArrayList<String> importedSkills, String jobDesc){
-        jobName = jobNm;
-        jobSkills = importedSkills;
-        jobDescription = jobDesc;
+    public Job (String jobNm, ArrayList<Pair<String, Integer>> importedSkills, String jobDesc){
+        this.jobName = jobNm;
+        this.jobSkills = importedSkills;
+        this.jobDescription = jobDesc;
 
     }
 
@@ -25,11 +25,11 @@ public class Job {
         this.jobName = jobName;
     }
 
-    public ArrayList<String> getJobSkills() {
+    public ArrayList<Pair<String, Integer>> getJobSkills() {
         return jobSkills;
     }
 
-    public void setJobSkills(ArrayList<String> jobSkills) {
+    public void setJobSkills(ArrayList<Pair<String, Integer>> jobSkills) {
         this.jobSkills = jobSkills;
     }
 }

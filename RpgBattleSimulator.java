@@ -47,10 +47,10 @@ class RpgBattleSimulator{
 
     private void createJobs() {
         ArrayList demoJobMoveList = new ArrayList();
-        demoJobMoveList.add("Strike");
-        demoJobMoveList.add("Lash");
-        demoJobMoveList.add("Heal");
-        demoJobMoveList.add("Spark");
+        demoJobMoveList.add(new Pair("Strike", 1));
+        demoJobMoveList.add(new Pair("Lash", 1));
+        demoJobMoveList.add(new Pair("Heal", 1));
+        demoJobMoveList.add(new Pair("Spark", 1));
         Job demoJob = new Job("Demo Job", demoJobMoveList, "A sample job for use in designing the project, the job is skilled in a variety of techniques.");
         System.out.println("Jobs successfully loaded");
     }
